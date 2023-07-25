@@ -1,0 +1,221 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}home{% endblock title %}
+
+{% block banner-slider %}
+
+<div id="demo">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/banner3.webp' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/images/banner/banner1.webp' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/images/banner/banner2.webp' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br><br><br>
+{% comment %}  {% endcomment %}
+    
+    <div class="container-sm ">
+        <div class="row">
+            <div class="col-12 mt-5 col-md-3" id="card">
+                <div class="card shadow" id="cards">
+                  <a href="{% url 'category' 'ar' %}" class="btn">
+
+                    <img src="{% static 'app/images/card3.webp'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-lighter text-dark">Acrylic</h5>
+                    </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 mt-5 col-md-3" id="card">
+                <div class="card shadow" id="cards">
+                  <a href="{% url 'category' 'pb' %}" class="btn">
+
+                    <img src="{% static 'app/images/card9.webp'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-lighter text-dark">Painting Brush</h5>
+                    </a>
+                    </div>
+                      
+                   
+                  </div>
+            </div>
+            <div class="col-12 mt-5 col-md-3" id="card">
+                <div class="card shadow" id="cards">
+                  <a href="{% url 'category' 'wc' %}" class="btn">
+
+                    <img src="{% static 'app/images/wc.webp'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-lighter text-dark">Water Colour</h5>
+                    </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 mt-5 col-md-3" id="card">
+                <div class="card shadow" id="cards">
+                  <a href="{% url 'category' 'pk' %}" class="btn">
+
+                    <img src="{% static 'app/images/painting knife.webp'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-lighter text-dark">Painting Knife</h5>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-sm ">
+      <div class="row">
+          <div class="col-12 mt-5 col-md-3" id="card">
+              <div class="card shadow " id="cardss">
+                <a href="{% url 'category' 'cr' %}" class="btn">
+
+                  <img src="{% static 'app/images/canvasroll.webp'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-lighter text-dark">Canvas Roll</h5>
+                  </a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 mt-5 col-md-3" id="card">
+              <div class="card shadow" id="cardss">
+                <a href="{% url 'category' 'pp' %}" class="btn">
+
+                  <img src="{% static 'app/images/pp.webp'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-lighter text-dark">Paint Palette</h5>
+                  </a>
+                  </div>
+                    
+                 
+                </div>
+          </div>
+          <div class="col-12 mt-5 col-md-3"id="card">
+              <div class="card shadow" id="cardss">
+                <a href="{% url 'category' 'gh' %}" class="btn">
+
+                  <img src="{% static 'app/images/gp4.webp'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-lighter text-dark">Graphie Powder</h5>
+                  </a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 mt-5 col-md-3" id="card">
+              <div class="card shadow" id="cardss">
+                <a href="{% url 'category' 'cb' %}" class="btn">
+
+                  <img src="{% static 'app/images/cb.webp'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-lighter text-dark" >Canvas Board</h5>
+                  </a>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br> 
+
+
+
+
+<div> 
+<div class="container-fluid ">
+  <div class="row ">
+      <div class="col-12 mt-5 col-md-12" id="card">
+          <div class="card shadow" >
+              <img src="{% static 'app/images/gif.gif '%}" class="card-img-top" style="height:500px;" alt="...">
+              
+            </div>
+          </div>
+      <br>
+
+
+      
+  {% endblock banner-slider %}
+
+ 
+
+  {% block main-content %}
+
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container text-center p-2 mt-5 text-dark" >
+    
+      <h1 class="fw-bold">OUR BEST BRANDS</h1>
+      
+  </div>
+</div>
+
+  <div>
+    <div class="row">
+    
+        <div class="col-12 mt-4 col-md-2" id="card">
+            <div class="card shadow" style="width:100%;" >
+                <img src="{% static 'app/images/brustrologo2.jpeg'%}" class="card-img-top" style="height:100px;" alt="...">
+                
+              </div>
+        </div>
+        <div class="col-12 mt-4 col-md-2" id="card">
+          <div class="card shadow" style="width:100%;">
+              <img src="{% static 'app/images/artlinelogo.jpeg'%}" class="card-img-top" style="height:100px;" alt="...">
+              
+            </div>
+      </div>
+      <div class="col-12 mt-4 col-md-2" id="card">
+        <div class="card shadow" style="width:100%;">
+            <img src="{% static 'app/images/ohuhulogo.png'%}" class="card-img-top" style="height:100px;" alt="...">
+            
+          </div>
+    </div>
+    <div class="col-12 mt-4 col-md-2" id="card">
+      <div class="card shadow" style="width:100%;">
+          <img src="{% static 'app/images/sharpie logo.svg'%}" class="card-img-top" style="height:100px;" alt="...">
+          
+        </div>
+  </div>
+  <div class="col-12 mt-4 col-md-2" id="card">
+    <div class="card shadow" style="width:100%;">
+        <img src="{% static 'app/images/fevicryllogo.png'%}" class="card-img-top" style="height:100px;" alt="...">
+        
+      </div>
+  </div>
+        <div class="col-12 mt-4 col-md-2" id="card">
+            <div class="card shadow" style="width: 100%;">
+                <img src="{% static 'app/images/staedtlerlogo.png'%}" class="card-img-top" style="height:100px;" alt="...">
+                
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+ 
+    
+{% endblock main-content %}
